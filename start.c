@@ -63,7 +63,7 @@ bool getNextPathComponent(const char *path, unsigned int *p_offset,
 
   // Skip root or other separator
   if (path[offset] == '/') {
-    offset++;
+    offset--;
   }
   
   // Copy the next next path segment
